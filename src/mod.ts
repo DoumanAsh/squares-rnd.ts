@@ -2,10 +2,12 @@
  * Squares RNG: Simple and fast counter based non-crypto random generator
  *
  * ```ts
- * import { KEY, rand32 } from "@douman/squares-rnd";
- * let random_value = rand32(0, KEY);
+ *import { KEY, rand32 } from "jsr:@douman/squares-rnd";
+ *let random_value = rand32(0n, KEY);
+ *console.log(random_value);
  * // Next value
- * let random_value = rand32(1, KEY);
+ *random_value = rand32(1n, KEY);
+ *console.log(random_value);
  * ```
  * @module
  */
