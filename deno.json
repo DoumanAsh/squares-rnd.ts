@@ -1,0 +1,20 @@
+{
+  "name": "@douman/squares-rnd",
+  "version": "1.0.0",
+  "exports": "./src/mod.ts",
+  "tasks": {
+    "dev": "deno test --watch src/mod.ts"
+  },
+  "license": "BSL-1.0",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  },
+  "publish": {
+    "include": [
+      "src/**",
+      "deno.json",
+      "README.md",
+      "LICENSE"
+    ]
+  }
+}
