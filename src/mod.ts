@@ -1,3 +1,15 @@
+/**
+ * Squares RNG: Simple and fast counter based non-crypto random generator
+ *
+ * ```ts
+ * import { KEY, rand32 } from "@douman/squares-rnd";
+ * let random_value = rand32(0, KEY);
+ * // Next value
+ * let random_value = rand32(1, KEY);
+ * ```
+ * @module
+ */
+
 type WasmInterface = {
     rand32: (counter: bigint, key: bigint) => number,
     rand64: (counter: bigint, key: bigint) => bigint,
